@@ -26,8 +26,8 @@ function gotResults(err,results){
     div.html('Error')
     }else{
   speech = new p5.Speech(); // speech synthesis object
-speech.speak('There is a '+results[0].label);
-      div.html(results[0].label)
+speech.speak(results[0].label);
+      div.html('There is a '+ results[0].label)
       classifier.classify(gotResults)
       }
   
