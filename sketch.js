@@ -9,6 +9,7 @@ function setup(){
   div = createP('Loading..')
   
   video= createCapture(VIDEO);
+  video.size(240,320)
   classifier = ml5.imageClassifier('MobileNet',video, modelLoaded);
   
   }
